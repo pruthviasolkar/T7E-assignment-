@@ -1,0 +1,97 @@
+/* slidebar.css */
+.slidebar {
+     
+    height: 100%;
+    width: 250px;
+    background-color: #252b3b;
+    color: white;
+    overflow-x: visible;
+    transition: 0.3s;
+    padding-right: 15px;
+  }
+  
+  .slidebar.closed {
+    width: 50px;
+  }
+  
+  .toggle-button {
+    position:relative;
+    left: 68px;
+    top: 7px;
+    z-index: 1;
+    background-color: #252b3b00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    outline: none !important;
+    border:none ;
+  }
+  .toggle-button img {
+    width: 40px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+  }
+  
+  .menu li {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: left;
+    transition: 0.3s;
+  }
+  
+  .menu li:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  .menu li .icon {
+    margin-right: 10px;
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+  }
+  
+  .menu li span {
+    flex: 1;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  .slidebar.closed .menu li span {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .logoslide img{
+    width: 100px;
+    align-self: center;
+  }
+  .headslide{
+    display: flex;
+    justify-content: center;
+  }
+ /* Add a smooth transition for the img inside logoslide */
+.logoslide {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    height: 70px;
+  }
+  
+  .logoslide img {
+    width: 100px;
+    align-self: center;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .slidebar.closed .logoslide img {
+    opacity: 0;
+    visibility: hidden; /* Ensures the img doesn't occupy space when hidden */
+  }
+  
