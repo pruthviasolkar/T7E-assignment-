@@ -1,6 +1,6 @@
 import React from 'react'
 import Profilehead from './userhead/Profilehead'
-import Carddash from './cards/carddash'
+import Carddash from './cards/Carddash'
 import "./maindash.css"
  
 const Maindash = () => {
