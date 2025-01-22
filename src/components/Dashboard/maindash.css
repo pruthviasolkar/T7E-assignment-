@@ -6,6 +6,7 @@
 .charts{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     
 }
 .map,.pie{
@@ -19,7 +20,7 @@
      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
      border-radius: 5px;
 }
-.pie h3{
+.pie h3,.map h3{
     margin-top: 0;
     font-weight: 500;
     font-size: 20px;

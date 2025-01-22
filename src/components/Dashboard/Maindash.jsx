@@ -11,7 +11,8 @@ const Maindash = () => {
       <Profilehead/>
       <Carddash/>
       <div className='charts'>
-        <div className='map'><IndiaMap/></div>
+        <div className='map'>
+        <h3>Vehicle Type &gt; App Registered User Count Sub Tradewise</h3><IndiaMap/></div>
         <div className='pie'>
           <h3>Vehicle Type &gt; App Registered User Count Sub Tradewise</h3>
           <Piechart/></div>
