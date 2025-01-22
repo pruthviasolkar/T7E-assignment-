@@ -1,5 +1,8 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", serif;
   
   color: rgba(0, 0, 0, 0.87);
   background-color: #f1f5f7;
@@ -7,4 +10,5 @@
 }
 body{
   margin: 0;
+   
 }

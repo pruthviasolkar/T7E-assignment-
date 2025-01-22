@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './slidebar.css';
 
 const Slidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
