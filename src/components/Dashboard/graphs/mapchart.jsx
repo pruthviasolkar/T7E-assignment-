@@ -2,7 +2,7 @@ import React from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 // URL to fetch GeoJSON data for India's states
-const geoUrl = "/path/to/india.json"; // Update this path if needed
+const geoUrl = "/india.json"; // Update this path if needed
 
 // Example user data with state-wise user count and color customization
 const userCount = [
@@ -18,10 +18,14 @@ const userCount = [
 
 const MapChart = () => {
   return (
-    <div style={{ width: "100%", height: "600px" }}>
+    <div style={{ width: "100%", height: "500px" }}> {/* Increased container height */}
       <ComposableMap
         projection="geoMercator"
-        style={{ width: "100%", height: "100%" }} // Full width and height of the parent container
+        projectionConfig={{
+          scale: 1000, // Increased scale for a larger map
+          center: [78.9629, 22.5937], // Center on India's coordinates
+        }}
+        style={{ width: "100%", height: "100%" }}
       >
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
@@ -31,7 +35,7 @@ const MapChart = () => {
                 (item) =>
                   item.state?.toLowerCase() === stateName?.toLowerCase() // Match state names case-insensitively
               );
-              const fillColor = data ? data.color : "#333"; // Default grey color for unmatched states
+              const fillColor = data ? data.color : "#d3d3d3"; // Default grey color for unmatched states
 
               return (
                 <Geography
@@ -40,8 +44,8 @@ const MapChart = () => {
                   fill={fillColor}
                   style={{
                     default: {
-                      outline: "none",
-                      backgroundColor: "#333", // Dark grey background for the map
+                        outline: "white", // White outline for all states
+                        outlineWidth: "1px",
                     },
                     hover: { fill: "#FFD700", outline: "none" }, // Highlight on hover
                     pressed: { outline: "none" },
