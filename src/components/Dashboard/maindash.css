@@ -27,3 +27,25 @@
     text-align: center;
     color: #7a7a7a;
 }
+@media (max-width: 800px) {
+    .charts{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .map,.pie{
+        width: 100%;
+        margin-block: 40px;
+        display: flex;
+        padding-block:30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+         border-radius: 5px;
+    }
+  }
+  
