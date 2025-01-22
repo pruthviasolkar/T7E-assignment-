@@ -1,8 +1,24 @@
-# React + Vite
+React.js Project - T7e
+How to Start the Project
+Clone the Project
+First, pull the project files from the given GitHub repository link:
+git clone  (https://github.com/pruthviasolkar/T7E-assignment-.git)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Navigate to the Project Directory
+After cloning the repository, navigate to the main project folder:
+cd T7
 
-Currently, two official plugins are available:
+Install Dependencies
+Run the following command to install the required node modules:
+npm i
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Start the Project
+Once the dependencies are installed, start the project by running the following command:
+npm run dev
+
+Access the Project
+After running the above command, the project should be up and running.  
+
+Additional Information
+If you encounter any issues during setup or execution, feel free to contact me.
+Make sure you have Node.js and npm installed on your machine.
