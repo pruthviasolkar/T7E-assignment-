@@ -6,4 +6,8 @@
     .piechart{
 text-align: left;
     }
+    .mainpiechart{
+        width: 100%;
+         
+     }
 }

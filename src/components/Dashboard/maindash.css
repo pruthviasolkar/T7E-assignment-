@@ -74,6 +74,8 @@
        margin-block: 20px;
         font-weight: 500;
         padding: 10px;
+        position: relative;
+        top: 30px;
         font-size: 20px;
         text-align: left;
         color: #7a7a7a;
